@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/HatimHJ/fylo-dark-theme)
-- Live Site URL: [live site](https://hatimhj.github.io/fylo-dark-theme/)
+- Solution URL: [solution](https://github.com/HatimHJ/fylo-dark-theme-GSAP)
+- Live Site URL: [live site](https://hatimhj.github.io/fylo-dark-theme-GSAP/)
 
 ### Built with
 
