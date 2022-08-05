@@ -1,0 +1,109 @@
+.cards{  
+  position: relative;
+  .quotes{
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    z-index: -1100;
+    transform: scale(.5);
+    @media (min-width:768px) {
+      transform: scale(1.5); 
+      left: 10%;     
+    }
+  }
+  .card{
+    @include shadow-br(4, 4px);
+    margin-inline: auto;
+    img.quotes{display: inline-block;}
+    p{font-size: 14px;line-height: 1.5;}
+    .person{
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      gap: 1rem;      
+      span{display: block;}
+      span:first-of-type{font-size: 16px;}
+      span:last-of-type{font-size: 12px;}
+    }
+    @media (min-width:768px) {
+      float: left;
+      width: 46%;
+      margin-inline: 2%;         
+    }
+    @media (min-width:1024px) {
+      float: left;
+      width: 29%;
+      margin-inline: 2%;         
+    }
+  }
+}
+
+
+
+
+
+.card{
+  position: relative;
+  transition: all .3s;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    transition: all .4s;
+  }
+  &::after{
+    top: -2px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: nth($list: $colors, $n: 7);
+  }
+  &:hover::after{
+    width: 100%;
+    
+  }
+  &:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.01);
+  }
+}
+
+
+.card.card-3{
+  position: relative;
+  transition: all .3s;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    transition: all .4s;
+  }
+  &::after{
+    top: -2px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: nth($list: $colors, $n: 7);
+  }
+  &:hover::after{
+    width: 100%;
+    
+  }
+  &:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.01);
+  }
+  @media (min-width:768px) and (max-width:1023px) { 
+      width: 96%;
+    p,
+    .person{
+      float: left;
+    }
+    p{
+      float: right;
+      width: 60%;
+    }
+    .person{
+      width: 30%;
+    }
+  }
+}

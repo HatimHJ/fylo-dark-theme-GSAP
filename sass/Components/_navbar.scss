@@ -1,0 +1,15 @@
+.navbar{  
+  .grid{
+    @include grid();
+    .logo{
+      grid-column: 1/4;
+      width: 6rem;
+    }
+    nav{
+      grid-column: 4/13;
+      .links{
+        justify-content: flex-end;
+      }
+    }
+  }
+}

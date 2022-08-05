@@ -1,0 +1,38 @@
+.hero{
+  
+  // ♻ media query ♻
+  @include tablet{
+    .content{
+      max-width: 650px;
+      margin-inline: auto;
+      h1{font-size: 2rem;}
+      p{
+        max-width: 550px;
+        margin-inline:auto;
+      }
+    }
+    img{max-width: 70%;}  
+  }
+
+}
+
+
+.intro {
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include tablet{
+  background-image: url(../images/bg-curvy-desktop.svg);
+  }
+  nav{
+    a{
+      color: darken($color: nth($colors, 1), $amount: 20);
+      transition: all .3s;
+      &:hover{
+        color: lighten($color: nth($colors, 1), $amount: 20);
+        text-decoration: underline;
+      }
+    }
+  }
+}

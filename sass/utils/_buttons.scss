@@ -1,0 +1,22 @@
+@import './color';
+
+.btn{
+  cursor: pointer;
+  transition: all .3s;
+  border: none;
+
+  font-size: 1rem;
+  transition: all .4s;
+}
+
+.btn-theme{  
+  @include bg-color(nth($colors, 7), #1c2431);
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  &:hover{
+    background-color: lighten($color: nth($colors, 7), $amount: 10);
+
+  }
+}

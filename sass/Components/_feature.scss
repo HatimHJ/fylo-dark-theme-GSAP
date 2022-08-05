@@ -1,0 +1,18 @@
+
+@include tablet{    
+  .features .flex-container{
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  .features .feature{
+    width: 46%;
+    max-width: 420px;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.access,
+    &.security{
+      margin-bottom: 3rem;
+    }
+  }
+}
